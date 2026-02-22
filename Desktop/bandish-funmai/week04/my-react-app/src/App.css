@@ -1,0 +1,126 @@
+/* StudentList.css */
+
+.container {
+  max-width: 700px; /* ขยายความกว้างกล่องหลักอีกนิด */
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Sarabun', 'Segoe UI', sans-serif; /* แนะนำให้ใช้ Font ไทยสวยๆ */
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* ปรับฟอร์มให้รองรับหลาย Input */
+.add-form {
+  display: flex;
+  flex-direction: column; /* เรียงเป็นแนวตั้งสำหรับกลุ่ม input */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* กลุ่ม input แถวละ 2-3 ช่อง */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  flex: 1; /* ขยายเต็มพื้นที่ที่เหลือ */
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+/* ให้ช่องชื่อกว้างกว่าเพื่อนหน่อย */
+.name-input {
+  flex: 2;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+/* ปุ่มกด */
+.btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-add {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 25px;
+  white-space: nowrap; /* ไม่ให้ข้อความปุ่มขึ้นบรรทัดใหม่ */
+}
+
+.btn-add:hover {
+  background-color: #27ae60;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* ตาราง */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.student-table th {
+  background-color: #f1f2f6;
+  color: #2f3640;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.student-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* ตกแต่งตัวเกรดให้เด่นขึ้น */
+.grade-badge {
+  display: inline-block;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 25px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #a4b0be;
+  margin-top: 30px;
+}
